@@ -8,7 +8,7 @@ load_dotenv()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 genai.configure(api_key=GEMINI_API_KEY)
-SYSTEM_PROMPT = "Ban la tro ly AI thong minh, than thien. Tra loi tieng Viet."
+SYSTEM_PROMPT = "Ban la tro ly AI thong minh, than thien. Hay tra loi bang tieng Viet."
 chat_sessions = {}
 logging.basicConfig(format="%(asctime)s | %(levelname)s | %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
