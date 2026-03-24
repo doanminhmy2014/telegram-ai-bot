@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 def get_chat(uid):
     if uid not in chat_sessions:
-        model = genai.GenerativeModel("gemini-2.0-flash", system_instruction=SYSTEM_PROMPT)
+                model = genai.GenerativeModel("gemini-1.5-flash", system_instruction=SYSTEM_PROMPT)
         chat_sessions[uid] = model.start_chat(history=[])
     return chat_sessions[uid]
 
